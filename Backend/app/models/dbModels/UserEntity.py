@@ -28,7 +28,7 @@ class UserEntity(EntityDB):
         nullable=False,
         default=list,
     )
-    additional_interests = Column(String(200), nullable=False, unique=True)
+    additional_interests = Column(String(200), nullable=False, default="")
 
     def to_dict(self) -> dict:
         return {

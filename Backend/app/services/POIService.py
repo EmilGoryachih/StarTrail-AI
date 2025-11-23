@@ -11,8 +11,8 @@ from app.models import InterestsEnum
 from app.models.dtoModels.POIOutDTO import POIOutDTO
 
 REPO_ROOT    = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-INDEX_FILE   = os.path.join(REPO_ROOT, "DLS", "Indexes", "poi_ivfpq.index")
-META_FILE    = os.path.join(REPO_ROOT, "DLS", "Dataset", "poi_dataset_enriched_incremental.csv")
+INDEX_FILE   = os.path.join(REPO_ROOT, "Model", "Indexes", "poi_ivfpq.index")
+META_FILE    = os.path.join(REPO_ROOT, "Model", "Dataset", "poi_dataset_enriched_incremental.csv")
 EMBED_MODEL  = "sentence-transformers/LaBSE"
 DEVICE       = "cpu"
 NLIST_PROBE  = 50

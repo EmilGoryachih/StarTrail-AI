@@ -15,9 +15,12 @@ main_router = APIRouter()
 main_router.include_router(api_router)
 
 app = FastAPI(
-    title="EasyTravel API",
-    description="Бэкенд для приложения EasyTravel",
+    title="StarTrail API",
+    description="AI-powered POI Search & Recommendation System - Backend API",
     version="1.0.0",
+    docs_url="/docs",  # Swagger UI
+    redoc_url="/redoc",  # ReDoc
+    openapi_url="/openapi.json",  # OpenAPI schema
 )
 
 # Подключаем CORS, чтобы фронтенд мог обращаться к бэку

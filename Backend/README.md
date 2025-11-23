@@ -49,15 +49,12 @@ Backend/
 * **PostgreSQL** database
 * **Docker & Docker Compose** (optional, but recommended)
 
-1. **FAISS index file**  
-   We keep the heavy `poi_ivfpq.poi_ivfpq` on Google Drive rather than in Git.  
-    download all files
-    https://drive.google.com/drive/folders/1QCts-pkFMKhGErPVhY9i7WJI4ihmvG3f?usp=sharing
-2. Copy to DIR like:
-   - LaBSE_emb.npy -> /DLS/experiments/indexes/LaBSE_emb.npy
-   - MiniLM-6-L12_emb.npy ->/DLS/experiments/indexes/MiniLM-6-L12_emb.npy
-   - MiniLM-12-L6_emb.npy -> /DLS/experiments/indexes/MiniLM-12-L6_emb.npy
-   - poi_embeddings.npy -> /DLS/Embeddings/poi_embeddings.npy
+1. **FAISS index and dataset files**  
+   The project requires:
+   - `Model/Indexes/poi_ivfpq.index` - FAISS index file
+   - `Model/Dataset/poi_dataset_enriched_incremental.csv` - POI metadata
+   
+   These files should be present in the `Model/` directory (already in repository)
 ---
 
 ## ⚙️ Configuration
