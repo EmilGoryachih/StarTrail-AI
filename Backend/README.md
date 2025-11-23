@@ -1,4 +1,4 @@
-# Backend README
+    # Backend README
 
 This directory contains the FastAPI‐based backend for EasyTravel. It provides REST endpoints for user management, authentication, semantic POI search, and personalized recommendations.
 
